@@ -78,6 +78,9 @@ export default {
           alert(res.data.message);
           this.errorList = [];
         })
+        .then(()=>{
+          this.$router.push('/students');
+        })
         .catch(function (error) {
           if (error.response) {
             if (error.response.status == 422) {

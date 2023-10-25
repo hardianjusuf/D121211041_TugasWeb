@@ -71,6 +71,9 @@ export default {
             subject: ''
           }
         })
+        .then(()=>{
+          this.$router.push('/students');
+        })
         .catch(function (error) {
 
           if (error.response) {
